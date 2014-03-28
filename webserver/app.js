@@ -46,7 +46,7 @@ app.dynamicHelpers(helpers);
 //-----------------------------------------
 // Start server
 //-----------------------------------------
-var port = parseInt(process.argv[2], 10) || 3000;
+app.listen(process.env.PORT || 5000);
 app.listen(port);
 if (app.address())
   console.log("watchmen server listening on port %d in %s mode", app.address().port, app.settings.env);

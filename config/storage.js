@@ -14,6 +14,7 @@ module.exports = {
     'redis' : {
       port: 1216,
       host: '127.0.0.1',
+      password: '',
       db: 1
     }
   }
